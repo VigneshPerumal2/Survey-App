@@ -115,7 +115,7 @@ function SurveyComponent() {
 
     // Send the survey.data to the backend
     axios
-      .post(`${process.env.REACT_APP_API_URL}survey`, survey.data)
+      .post(`https://fitnesssurvey.onrender.com/api/survey`, survey.data)
       .then((response) => {
         // Set state to display results
         setSurveyResults(survey.data);

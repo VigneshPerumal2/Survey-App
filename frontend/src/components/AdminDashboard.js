@@ -10,7 +10,7 @@ function AdminDashboard() {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}survey`)
+      .get(`https://fitnesssurvey.onrender.com/api/survey`)
       .then((response) => {
         setData(response.data);
       })
