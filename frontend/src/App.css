@@ -36,28 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.response-container {
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto;
-}
-
-.response-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.response-list li {
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.response-list li:last-child {
-  border-bottom: none;
-}
-

@@ -76,7 +76,17 @@ const surveyJSON = {
           name: "fitnessActivities",
           title: "Fitness activities you do:",
           isRequired: true,
-          choices: ["Yoga", "Running", "Gym", "Swimming"],
+          choices: [
+            "Yoga",
+            "Running",
+            "Gym",
+            "Swimming",
+            "Pilates",
+            "Dance",
+            "Rock Climbing",
+            "Aerobics",
+            "Cycling",
+          ],
         },
       ],
     },
@@ -105,7 +115,7 @@ function SurveyComponent() {
 
     // Send the survey.data to the backend
     axios
-      .post("http://localhost:5001/api/survey", survey.data)
+      .post(`${process.env.REACT_APP_API_URL}survey`, survey.data)
       .then((response) => {
         // Set state to display results
         setSurveyResults(survey.data);
