@@ -12,14 +12,10 @@ Admin Info:
 
 ## Screenshots
 
-|Homepage|User Login|Survey|Admin Dashboard|Survey Results|
-|--------|-----------|------|---------------|--------------|
-|![Homepage](![Screenshot 2023-10-22 at 12 42 38 AM](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/f2a21131-a788-4b5a-8c5a-b1107b058811)
-)|![Admin Login](![Screenshot 2023-10-22 at 12 43 08 AM](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/40f417f5-52f7-4eae-b1dc-63bc174f82eb)
-)|![Survey](![Screenshot 2023-10-22 at 12 43 24 AM](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/6de4f487-a12d-4120-8575-60e2799ee922)
-)|![Admin Dashboard](![Screenshot 2023-10-22 at 12 44 33 AM](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/bd2be125-7265-4787-9453-c6ff203bff29)
-)|![Survey Results](![Screenshot 2023-10-22 at 12 44 09 AM](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/eefca181-8508-4aee-a44b-82a45e26971e)
-)|
+| Homepage         | User Login       | Survey           | Admin Dashboard  | Survey Results   |
+| ---------------- | ---------------- | ---------------- | ---------------- | ---------------- |
+| ![Homepage](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/f2a21131-a788-4b5a-8c5a-b1107b058811) | ![User Login](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/40f417f5-52f7-4eae-b1dc-63bc174f82eb) | ![Survey](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/6de4f487-a12d-4120-8575-60e2799ee922) | ![Admin Dashboard](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/bd2be125-7265-4787-9453-c6ff203bff29) | ![Survey Results](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/eefca181-8508-4aee-a44b-82a45e26971e) |
+
 
 ## Overview
 
