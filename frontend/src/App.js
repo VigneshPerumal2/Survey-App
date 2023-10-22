@@ -11,7 +11,6 @@ import {
   Container,
   Typography,
   CssBaseline,
-  Grid,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -54,8 +53,9 @@ function App() {
     setAdminAuthenticated(false);
   };
   const handleUserLogout = () => {
-    isAuthenticated = false;
-    logout({ returnTo: `https://surveyfitness.onrender.com/` });
+    const logoutUrl =
+      "https://surveyfitness.onrender.com" || window.location.origin;
+    logout({ returnTo: logoutUrl });
   };
 
   return (
