@@ -171,7 +171,6 @@ function App() {
                 )}
               </>
             )}
-            <hr /> {/* Separator for clarity */}
             {!isAuthenticated && !isAdminAuthenticated && (
               <Button
                 variant="contained"
