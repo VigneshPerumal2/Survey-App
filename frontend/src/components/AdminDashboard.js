@@ -1,11 +1,26 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Bar, Pie } from "react-chartjs-2";
-import { Paper, Typography } from "@material-ui/core";
+import { Paper, Typography, Grid, makeStyles } from "@material-ui/core";
 import { Chart, registerables } from "chart.js";
 Chart.register(...registerables);
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    padding: theme.spacing(3),
+  },
+  paper: {
+    padding: theme.spacing(2),
+    marginBottom: theme.spacing(3),
+  },
+  chartTitle: {
+    marginBottom: theme.spacing(2),
+  },
+}));
+
 function AdminDashboard() {
+  const classes = useStyles();
+
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -58,82 +73,90 @@ function AdminDashboard() {
   const fitnessActivitiesData = Object.values(fitnessActivitiesMap);
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div className={classes.root}>
       <Typography variant="h4" gutterBottom>
         Admin Dashboard
       </Typography>
 
-      <Paper elevation={3} style={{ padding: "20px", marginBottom: "20px" }}>
-        <Typography variant="h6" gutterBottom>
-          Age Distribution
-        </Typography>
-        <Bar
-          data={{
-            labels: ["20-29", "30-39", "40-49", "50-59", "60-69", "70+"],
-            datasets: [
-              {
-                data: ageDistribution,
-                backgroundColor: [
-                  "#3f51b5",
-                  "#4caf50",
-                  "#ff9800",
-                  "#f44336",
-                  "#9c27b0",
-                  "#2196f3",
+      <Grid container spacing={3}>
+        <Grid item xs={12} md={6}>
+          <Paper className={classes.paper}>
+            <Typography variant="h6" className={classes.chartTitle}>
+              Age Distribution
+            </Typography>
+            <Bar
+              data={{
+                labels: ["20-29", "30-39", "40-49", "50-59", "60-69", "70+"],
+                datasets: [
+                  {
+                    data: ageDistribution,
+                    backgroundColor: [
+                      "#3f51b5",
+                      "#4caf50",
+                      "#ff9800",
+                      "#f44336",
+                      "#9c27b0",
+                      "#2196f3",
+                    ],
+                  },
                 ],
-              },
-            ],
-          }}
-        />
-      </Paper>
+              }}
+            />
+          </Paper>
+        </Grid>
 
-      <Paper elevation={3} style={{ padding: "20px", marginBottom: "20px" }}>
-        <Typography variant="h6" gutterBottom>
-          Primary Fitness Goals
-        </Typography>
-        <Pie
-          data={{
-            labels: fitnessGoalsLabels,
-            datasets: [
-              {
-                data: fitnessGoalsData,
-                backgroundColor: [
-                  "#3f51b5",
-                  "#4caf50",
-                  "#ff9800",
-                  "#f44336",
-                  "#9c27b0",
-                  "#2196f3",
+        <Grid item xs={12} md={6}>
+          <Paper className={classes.paper}>
+            <Typography variant="h6" className={classes.chartTitle}>
+              Primary Fitness Goals
+            </Typography>
+            <Pie
+              data={{
+                labels: fitnessGoalsLabels,
+                datasets: [
+                  {
+                    data: fitnessGoalsData,
+                    backgroundColor: [
+                      "#3f51b5",
+                      "#4caf50",
+                      "#ff9800",
+                      "#f44336",
+                      "#9c27b0",
+                      "#2196f3",
+                    ],
+                  },
                 ],
-              },
-            ],
-          }}
-        />
-      </Paper>
+              }}
+            />
+          </Paper>
+        </Grid>
 
-      <Paper elevation={3} style={{ padding: "20px", marginBottom: "20px" }}>
-        <Typography variant="h6" gutterBottom>
-          Fitness Activities Comparison
-        </Typography>
-        <Bar
-          data={{
-            labels: fitnessActivitiesLabels,
-            datasets: [
-              {
-                data: fitnessActivitiesData,
-                backgroundColor: "#3f51b5",
-              },
-            ],
-          }}
-          options={{
-            plugins: {
-              legend: {
-                display: false,
-              },
-            },
-          }}
-        />
-      </Paper>
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <Typography variant="h6" className={classes.chartTitle}>
+              Fitness Activities Comparison
+            </Typography>
+            <Bar
+              data={{
+                labels: fitnessActivitiesLabels,
+                datasets: [
+                  {
+                    data: fitnessActivitiesData,
+                    backgroundColor: "#3f51b5",
+                  },
+                ],
+              }}
+              options={{
+                plugins: {
+                  legend: {
+                    display: false,
+                  },
+                },
+              }}
+            />
+          </Paper>
+        </Grid>
+      </Grid>
     </div>
   );
 }
