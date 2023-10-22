@@ -53,6 +53,10 @@ function App() {
   const handleAdminLogout = () => {
     setAdminAuthenticated(false);
   };
+  const handleUserLogout = () => {
+    isAuthenticated = false;
+    logout({ returnTo: `https://surveyfitness.onrender.com/` });
+  };
 
   return (
     <Container component="main" maxWidth="xs">
@@ -106,9 +110,7 @@ function App() {
             <>
               <SurveyComponent />
               <Button
-                onClick={() =>
-                  logout({ returnTo: `https://surveyfitness.onrender.com/` })
-                }
+                onClick={() => logout({ returnTo: window.location.origin })}
               >
                 User Logout
               </Button>
