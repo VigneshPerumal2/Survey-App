@@ -1,5 +1,3 @@
-// src/components/SurveyComponent.js
-
 import React from "react";
 import axios from "axios";
 import * as Survey from "survey-react";
@@ -21,12 +19,13 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   surveyContainer: {
-    width: "100%", // Fix IE 11 issue.
+    width: "100%",
     marginTop: theme.spacing(3),
   },
   paper: {
     marginTop: theme.spacing(3),
     padding: theme.spacing(2),
+    width: "200%",
   },
   title: {
     marginBottom: theme.spacing(3),
@@ -164,7 +163,7 @@ function SurveyComponent() {
   };
 
   return (
-    <Container component="main" maxWidth="md" className={classes.root}>
+    <Container component="main" maxWidth="lg" className={classes.root}>
       {isCompleted ? (
         <Paper className={classes.paper}>
           <Typography component="h1" variant="h5" className={classes.title}>
@@ -183,9 +182,11 @@ function SurveyComponent() {
           </List>
         </Paper>
       ) : (
-        <div className={classes.surveyContainer}>
-          <Survey.Survey json={surveyJSON} onComplete={onComplete} />
-        </div>
+        <Paper className={classes.paper}>
+          <div className={classes.surveyContainer}>
+            <Survey.Survey json={surveyJSON} onComplete={onComplete} />
+          </div>
+        </Paper>
       )}
     </Container>
   );
