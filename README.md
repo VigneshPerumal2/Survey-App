@@ -70,11 +70,9 @@ The backend for this application is separate, and you can find it [here](https:/
    Open a terminal and run:
 
    ```bash
-   git clone https://github.com/yourusername/fitness-survey-app.git
+   git clone https://github.com/VigneshPerumal2/Survey-App.git
    cd fitness-survey-app
    ```
-
-   Replace `yourusername` with the actual username if the repository is hosted on a different account.
 
 2. **Install Dependencies**
 
