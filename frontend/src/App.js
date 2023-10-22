@@ -52,11 +52,6 @@ function App() {
   const handleAdminLogout = () => {
     setAdminAuthenticated(false);
   };
-  const handleUserLogout = () => {
-    const logoutUrl =
-      "https://surveyfitness.onrender.com" || window.location.origin;
-    logout({ returnTo: logoutUrl });
-  };
 
   return (
     <Container component="main" maxWidth="xs">
@@ -109,8 +104,15 @@ function App() {
           {isAuthenticated && (
             <>
               <SurveyComponent />
-              <Button
+              {/* <Button
                 onClick={() => logout({ returnTo: window.location.origin })}
+              >
+                User Logout
+              </Button> */}
+              <Button
+                onClick={() =>
+                  logout({ returnTo: "https://surveyfitness.onrender.com/" })
+                }
               >
                 User Logout
               </Button>
