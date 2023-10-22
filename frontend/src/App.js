@@ -106,7 +106,9 @@ function App() {
             <>
               <SurveyComponent />
               <Button
-                onClick={() => logout({ returnTo: window.location.origin })}
+                onClick={() =>
+                  logout({ returnTo: `https://surveyfitness.onrender.com/` })
+                }
               >
                 User Logout
               </Button>
