@@ -1,4 +1,8 @@
 # Fitness Survey App
+## Overview
+
+This Fitness Survey App is a web-based application that allows users to participate in fitness-related surveys and administrators to view the survey results. The application is designed to gather information on the fitness habits, goals, and activities of the participants. It offers a user-friendly interface for both survey participants and administrators.
+
 
 ## Live Demo
 
@@ -16,10 +20,6 @@ Admin Info:
 | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- |
 | ![Homepage](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/f2a21131-a788-4b5a-8c5a-b1107b058811) | ![User Login](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/40f417f5-52f7-4eae-b1dc-63bc174f82eb) | ![Survey](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/6de4f487-a12d-4120-8575-60e2799ee922) | ![Admin Dashboard](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/bd2be125-7265-4787-9453-c6ff203bff29) | ![Survey Results](https://github.com/VigneshPerumal2/Survey-App/assets/34863107/eefca181-8508-4aee-a44b-82a45e26971e) |
 
-
-## Overview
-
-This Fitness Survey App is a web-based application that allows users to participate in fitness-related surveys and administrators to view the survey results. The application is designed to gather information on the fitness habits, goals, and activities of the participants. It offers a user-friendly interface for both survey participants and administrators.
 
 ## User Stories
 
