@@ -101,6 +101,13 @@ function AdminDashboard() {
                   },
                 ],
               }}
+              options={{
+                plugins: {
+                  legend: {
+                    display: false,
+                  },
+                },
+              }}
             />
           </Paper>
         </Grid>
