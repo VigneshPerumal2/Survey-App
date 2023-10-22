@@ -46,8 +46,6 @@ Admin Info:
 - [x] Administrators can analyze the data to gather insights into the fitness habits and goals of the participants.
 
 ## Bonus Features
-
-- [x] Responsive design for mobile and desktop views.
 - [x] Graphical representation of survey results for easy analysis.
 
 ## Installation and Setup
