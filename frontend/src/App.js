@@ -112,7 +112,7 @@ function App() {
         </AppBar>
         <Paper className={classes.paper} elevation={3}>
           <Typography component="h1" variant="h5">
-            Fitness Survey Portal
+            Welcome to the Survey Fitness Portal
           </Typography>
           <div className="App">
             {isAdminAuthenticated && !isAuthenticated ? (
